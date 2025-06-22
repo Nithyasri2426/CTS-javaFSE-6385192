@@ -1,0 +1,19 @@
+public class ForecastTest {
+    public static void main(String[] args) {
+        double initialAmount = 1000.0;
+        double annualGrowthRate = 0.05; // 5%
+        int numberOfYears = 5;
+
+        System.out.println("📈 Financial Forecast (Recursive):");
+        for (int year = 0; year <= numberOfYears; year++) {
+            double value = FinancialForecast.futureValue(initialAmount, annualGrowthRate, year);
+            System.out.printf("Year %d: $%.2f\n", year, value);
+        }
+
+        System.out.println("\n🚀 Optimized Forecast (Iterative):");
+        for (int year = 0; year <= numberOfYears; year++) {
+            double value = FinancialForecast.futureValueIterative(initialAmount, annualGrowthRate, year);
+            System.out.printf("Year %d: $%.2f\n", year, value);
+        }
+    }
+}
