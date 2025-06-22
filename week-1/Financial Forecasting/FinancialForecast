@@ -1,0 +1,19 @@
+public class FinancialForecast {
+
+    // Recursive method to calculate future value
+    public static double futureValue(double initialAmount, double rate, int years) {
+        if (years == 0) {
+            return initialAmount;
+        }
+        return futureValue(initialAmount, rate, years - 1) * (1 + rate);
+    }
+
+    // Optional: Iterative version to optimize performance
+    public static double futureValueIterative(double initialAmount, double rate, int years) {
+        double result = initialAmount;
+        for (int i = 0; i < years; i++) {
+            result *= (1 + rate);
+        }
+        return result;
+    }
+}
