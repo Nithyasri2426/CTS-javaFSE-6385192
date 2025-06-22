@@ -1,0 +1,6 @@
+Logger instance created.
+LOG: This is the first log message.
+LOG: This is the second log message.
+Logger 1 hash: 12345678
+Logger 2 hash: 12345678
+Logger 3 hash: 12345678
