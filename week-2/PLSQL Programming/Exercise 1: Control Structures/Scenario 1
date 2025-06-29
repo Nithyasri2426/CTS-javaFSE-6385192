@@ -1,0 +1,14 @@
+//Apply Interest Discount for Senior Customers
+
+BEGIN
+  FOR rec IN (SELECT customer_id, age FROM customers) LOOP
+    IF rec.age > 60 THEN
+      UPDATE loans
+      SET interest_rate = interest_rate - 0.01
+      WHERE customer_id = rec.customer_id;
+    END IF;
+  END LOOP;
+
+  COMMIT;
+END;
+/
