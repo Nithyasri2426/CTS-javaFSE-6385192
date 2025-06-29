@@ -1,6 +1,7 @@
 PL/SQL Stored Procedures – Banking Scenarios
 This section of the repository contains PL/SQL stored procedures designed to handle typical banking operations. Each procedure demonstrates how business logic can be encapsulated within reusable, modular code blocks to support operations such as interest processing, bonus calculations, and fund transfers.
 
+
 📁 Contents
 Scenario 1: ProcessMonthlyInterest – Calculate and apply interest to all savings accounts.
 
